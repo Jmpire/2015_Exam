@@ -47,9 +47,11 @@ namespace Exam
                 }
                 return x;
             }
-            public List<string> By_Country(string country, ImportedP p)
+            // A bit unsure of this one because I did it while falling asleep
+            public List<string> By_Country(string country)
             {
                 List<string> nproducts = new List<string>();
+                List<ImportedP> p = new List<ImportedP>();
                 foreach(Product product in products)
                 {
                     if(product is ImportedP && p.origin.Equals(country))
